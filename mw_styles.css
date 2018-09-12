@@ -45,21 +45,69 @@ body footer {
  }
 /* Heading Styles */
 
-
+/* The two headings can be selected in one rule because the comma tells the browser that the two elements are going to have the same properties and values. */
+h1, h2 {
+    font-weight: normal;
+}
 
 /* Navigation Styles */
 
+/* The ul element is the child of the nav element. The property list-style witht the valaue of none means that next to the unordered list there will be not bullet points or, " disks". the line height elements changes the space between each of the list elements */
+nav > ul {
+    list-style: none;
+    line-height: 2em;
+    font-size: 0.9em;
+}
 
+/* The elements are read from right to left as the child of the elements that came before them. The ":link" says that the link has not been visited, and the ":visited" says that the link has been visited by the user. The properties say that the rule is the same for when it has been visted or when it hasn't.*/
+nav > ul > li > a:link,
+nav > ul > li > a:visited {
+    text-decoration: none;
+    color: rgb(43, 59, 125);
 
+}
 
+/* The ":active" says the link is in the preocess of being activated, and the ":hover" says that the mouse is hovering over the link. Again the property has the property applied only when the listed actions are selected. */
+nav > ul > li > a:active,
+nav > ul > li > a:hover{
+    color: rgb(212, 35, 35);
+}
 /* Article Styles */
 
+/* Each article has and id of tour_summary and has the h1 or p elements selected. The leter spacing is also acalled kerining */
+article#tour_summary h1{
+    font-size: 2.2em;
+    letter-spacing: .2em;
+}
 
+article#tour_summary p{
+    font-size: 1.1em;
+}
+
+article#tour_summary p:first-of-type::first-line {
+    font-size: 1.2em;
+    font-variant: small-caps;
+}
 
 
 /* Aside Styles */
 
+aside#tour_itinerary h1 {
+    font-size: 1.2em;
+}
 
+aside#tour_itinerary h2 {
+    font-size: 0.9em;
+}
+aside#tour_itinerary p {
+    font-size: 0.8em;
+}
+aside#tour_itinerary h2:nth-last-of-type(odd) {
+    color: rgb(79, 91, 40);
+}
 
+aside#tour_itinerary h2:nth-last-of-type(even) {
+    color: rgb(81, 95, 175);
+}
 /* Blockquote Styles */
 
