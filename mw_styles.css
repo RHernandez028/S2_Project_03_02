@@ -74,21 +74,21 @@ nav > ul > li > a:hover{
 }
 /* Article Styles */
 
-/* Each article has and id of tour_summary and has the h1 or p elements selected. The leter spacing is also acalled kerining */
+/* Each article has and id of tour_summary and has the h1 or p elements selected. The leter spacing is also called kerining and it is set to .2em.*/
 article#tour_summary h1{
     font-size: 2.2em;
     letter-spacing: .2em;
 }
-
+/* Here instead of the h1 element it is the p element and here only the font size is changed. */
 article#tour_summary p{
     font-size: 1.1em;
 }
 
+/* The "first-of-type" says the first child of the element will be affected. Similarly the the "::first-line" tells the browser that the first line of text wil be changes according to the properties and values. The font variant says weather or not the text is upler or lower case*/
 article#tour_summary p:first-of-type::first-line {
     font-size: 1.2em;
     font-variant: small-caps;
 }
-
 
 /* Aside Styles */
 
@@ -111,3 +111,11 @@ aside#tour_itinerary h2:nth-last-of-type(even) {
 }
 /* Blockquote Styles */
 
+blockquote{
+    background-color: rgb(173, 189, 227);
+    color: rgba(255, 255, 255, .65);
+}
+
+blockquote > p {
+    padding: 2.5px 10px 2.5px 10px;
+}
