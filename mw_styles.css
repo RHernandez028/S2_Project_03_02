@@ -92,6 +92,7 @@ article#tour_summary p:first-of-type::first-line {
 
 /* Aside Styles */
 
+/* These asides have an id of #tour_itinerary and has either an h1, h2, or p nested inside*/
 aside#tour_itinerary h1 {
     font-size: 1.2em;
 }
@@ -111,11 +112,13 @@ aside#tour_itinerary h2:nth-last-of-type(even) {
 }
 /* Blockquote Styles */
 
+/* The background color is changed along with the color of the text color. */
 blockquote{
     background-color: rgb(173, 189, 227);
     color: rgba(255, 255, 255, .65);
 }
 
+/* The p is a child of blocquote and inside the padding is set to 2.5 px in the top and bottom and 10px on the left are right. */
 blockquote > p {
     padding: 2.5px 10px 2.5px 10px;
 }
